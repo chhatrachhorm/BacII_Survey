@@ -35,6 +35,6 @@
         </div>
   </nav>
     </div><!--end of div.container-->
-    <include "layout.footer.blade">
+    @include('layout.footer')
   </body>
 </html>
