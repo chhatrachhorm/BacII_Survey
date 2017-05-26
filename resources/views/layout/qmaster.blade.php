@@ -20,5 +20,6 @@
     <div class="container">
 
     </div><!--end of div.container-->
+    <include "layout.footer.blade">
   </body>
 </html>
