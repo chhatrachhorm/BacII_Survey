@@ -1,15 +1,15 @@
-<!--
-# @Date:   2017-05-26T21:23:58+07:00
-# @Last modified time: 2017-05-26T21:24:42+07:00
--->
 <!DOCTYPE html>
-<html lang="{{ config('app.locale') }}">
+<html>
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="@yield('desc')">
+    <!--Import Google Icon Font-->
+    <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
 
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+<<<<<<< HEAD
     <link rel="stylesheet" href="css/materialize.min.css" type="text/css">
     <link rel="stylesheet" href="css/css/qmaster.css" type="text/css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -20,9 +20,13 @@
       });
     </script>
     <title>@yield('title')</title>
+=======
+>>>>>>> a3184cc5faf7c745962b279033c6055f80bc4e6b
   </head>
+
   <body>
     @include('layout.nav')
+<<<<<<< HEAD
     <div class="container">
 
     </div><!--end of div.container-->
@@ -30,6 +34,17 @@
 
   <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
   <script type="text/javascript" src="js/materialize.min.js"></script>
+=======
+    @include('layout.footer')
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <script>
+    $( document ).ready(function(){
+      $(".button-collapse").sideNav();
+    })
+    </script>
+>>>>>>> a3184cc5faf7c745962b279033c6055f80bc4e6b
   </body>
 
 </html>
