@@ -12,7 +12,13 @@
 
     <link rel="stylesheet" href="css/materialize.min.css" type="text/css">
     <link rel="stylesheet" href="css/css/qmaster.css" type="text/css">
-    <script type="text/javascript" src="js/materialize.min.js"></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <script>
+      $( document ).ready(function(){
+        $(".button-collapse").sideNav();
+      });
+    </script>
     <title>@yield('title')</title>
   </head>
   <body>
@@ -20,6 +26,10 @@
     <div class="container">
 
     </div><!--end of div.container-->
-    <include "layout.footer.blade">
+    @include('layout.footer')
+
+  <script type="text/javascript" src="js/jquery-3.2.1.slim.min.js"></script>
+  <script type="text/javascript" src="js/materialize.min.js"></script>
   </body>
+
 </html>
