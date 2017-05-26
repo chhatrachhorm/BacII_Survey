@@ -5,8 +5,8 @@
     <ul class="right hide-on-med-and-down">
       <li><a href="welcome">Welcome</a></li>
       <li><a href="survey">Skill Picker</a></li>
-      <li><a href="contact">Contact</a></li>
-      <li><a href="about">About</a></li>
+      <li><a href="contact">Contacts</a></li>
+      <li><a href="about"><i class="material-icons">info_outline</i></a></li>
     </ul>
     <ul class="side-nav" id="mobile-demo">
       <li><a href="welcome">Welcome</a></li>
