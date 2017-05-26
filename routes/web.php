@@ -12,3 +12,7 @@
 */
 
 Route::get('/', ['uses' => 'PagesController@welcome']);
+Route::get('welcome', ['uses'=>'PagesController@welcome']);
+Route::get('survey', ['uses' => 'PagesController@survey']);
+Route::get('contact',['uses'=>'PagesController@contact']);
+Route::get('about',['uses'=>'PagesController@about']);
