@@ -4,7 +4,7 @@
 @section('Heading')
       <div class="col s12 splash">
         <div class="card-panel #212121 grey darken-4">
-          <h1 class="white-text">
+          <h1 class="white-text animated bounceInDown">
             ការស្វែងយល់ពីជំនាញ
           </h1>
         </div>
@@ -13,10 +13,10 @@
 @section('Instruction')
 <div class="col s12 instruction">
     <div class="card-panel">
-      <h2>ចង់​សម្រេច​ចិត្ត​ប្រកប​ដោយ​ភាព ត្រឹមត្រូវឬ?</h2>
-      <h3>ចូរមានភាពស្មោះត្រង់ ចំពោះខ្លួនអ្នក</h3>
-      <div class="AlignRight">
-      <a href="#S1" class="waves-effect waves-light btn pulse #0d47a1 blue darken-3"><i class="material-icons left"></i>ចាប់ផ្តើម</a>
+      <h2 class="animated bounceInLeft">ចង់​សម្រេច​ចិត្ត​ប្រកប​ដោយ​ភាព ត្រឹមត្រូវឬ?</h2>
+      <h3 class="animated bounceInUp">ចូរមានភាពស្មោះត្រង់ ចំពោះខ្លួនអ្នក</h3>
+      <div class="AlignRight animated bounceInRight">
+      <a href="#S1" class="waves-effect waves-light btn pulse #0d47a1 blue darken-3 animated bounInRight"><i class="material-icons left"></i>ចាប់ផ្តើម</a>
     </div>
     </div>
   </div>
