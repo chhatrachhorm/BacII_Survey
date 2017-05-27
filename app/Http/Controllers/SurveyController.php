@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 
 class SurveyController extends Controller
 {
-    public function test(){
+    public function survey(){
       return view('skillsurvey.survey');
     }
 }
