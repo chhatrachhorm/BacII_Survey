@@ -32,45 +32,50 @@
       $ansNum = 0;
       $total = 0;
     ?>
-    @for($secNum = 0; $secNum < 16; $secNum++)
-    <h2>{{$questions[$secNum][0]->q_desc}}</h2>
-    <ol>
-      <table class="striped">
-      @foreach($answers[$secNum] as $answer)
-      <tr>
-        <td><li>. {{$answer->ans_desc}}</li></td>
-        <?php
-          $nameradio = "ans". $ansNum;
 
-        ?>
-        <td>
-          @for($i=0; $i<4; $i++)
-          <?php $idradio = "id".$ansNum. $i; ?>
-          <input class="with-gap" name="<?php echo "$nameradio" ?>" value="{{$i}}" type="radio" id="<?php echo "$idradio" ?>"  />
-          <label for="<?php echo "$idradio" ?>">{{$i}}</label>
-          @endfor
-        </td>
-      </tr>
-      <?php
-        // if(isset($_POST['$nameradio']) && !empty($_POST['$nameradio']))
-        // {
-        //   $Q1A1 = $_POST['$nameradio'];
-        // }
-        // $total = $total + 1;
+    <ul class="collapsible popout" data-collapsible="accordion">
+      @for($secNum = 0; $secNum < 16; $secNum++)
+      <li>
+        <div class="collapsible-header"><i class="material-icons">filter_drama</i>{{$questions[$secNum][0]->q_desc}}</div>
+        <div class="collapsible-body"><span>
+          <table class="striped">
+          @foreach($answers[$secNum] as $answer)
+          <tr>
+            <td><li>. {{$answer->ans_desc}}</li></td>
+            <?php
+              $nameradio = "ans". $ansNum;
+            ?>
+            <td>
+              @for($i=0; $i<4; $i++)
+              <?php $idradio = "id".$ansNum. $i; ?>
+              <input class="with-gap" name="<?php echo "$nameradio" ?>" value="{{$i}}" type="radio" id="<?php echo "$idradio" ?>"  />
+              <label for="<?php echo "$idradio" ?>">{{$i}}</label>
+              @endfor
+            </td>
+          </tr>
+          <?php
+            // if(isset($_POST['$nameradio']) && !empty($_POST['$nameradio']))
+            // {
+            //   $Q1A1 = $_POST['$nameradio'];
+            // }
+            // $total = $total + 1;
 
-        // Print ($total);
-        $ansNum = $ansNum +1;
-      ?>
-      @endforeach
+            // Print ($total);
+            $ansNum = $ansNum +1;
+          ?>
+          @endforeach
+        </table>
+      </span>
+      <div class="AlignRight">
+      <a class="waves-effect waves-light btn pulse #0d47a1 blue darken-3"><i class="material-icons left"></i>បន្ទាប់</a>
+    </div>
+        </div>
+      </li>
+      @endfor
+    </ul>
 
 
-      </table>
-    </ol>
 
-    <div class="AlignRight">
-    <a class="waves-effect waves-light btn pulse #0d47a1 blue darken-3"><i class="material-icons left"></i>បន្ទាប់</a>
-  </div>
-  @endfor
   </div>
 
 </form>
