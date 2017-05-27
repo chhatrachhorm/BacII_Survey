@@ -2,3 +2,6 @@
   padding-left: 3vmin;
   padding-right: 3vmin;
 }
+#sidenav-overlay {
+  z-index: 1
+}
