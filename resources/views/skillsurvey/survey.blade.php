@@ -4,7 +4,7 @@
 @section('survey')
 <h1>Test</h1>
 <ol>
-@foreach( $answers as $x)
+@foreach( $answers[1] as $x)
 <li>{{ $x -> ans_desc }}</li>
 @endforeach
 </ol>
