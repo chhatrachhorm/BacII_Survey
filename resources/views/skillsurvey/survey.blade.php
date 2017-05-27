@@ -11,5 +11,10 @@
         </div>
       </div>
 </div>
-
+<h1>Test</h1>
+<ol>
+@foreach( $answers as $x)
+<li>{{ $x -> ans_desc }}</li>
+@endforeach
+</ol>
 @endsection

@@ -4,23 +4,20 @@ namespace App\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use View;
-use DB;
-
-class AppServiceProvider extends ServiceProvider
+class ComposerSurveyServiceProvider extends ServiceProvider
 {
     /**
-     * Bootstrap any application services.
+     * Bootstrap the application services.
      *
      * @return void
      */
     public function boot()
     {
-
-    
+        View::composer('skillsurvey.survey', 'App\Http\SurveyViewComposers\SurveyComposer');
     }
 
     /**
-     * Register any application services.
+     * Register the application services.
      *
      * @return void
      */
