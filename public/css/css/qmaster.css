@@ -1,7 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Bayon|Hanuman');
+body{
+  /*font-family: 'Bayon', cursive;*/
+  font-family: 'Hanuman', serif;
+  margin: 0;
+}
 .wrapcontent{
   padding-left: 3vmin;
   padding-right: 3vmin;
 }
 #sidenav-overlay {
   z-index: 1
+}
+h1{
+  font-size: 10vmin;
+}
+h2{
+  font-size: 5.5vmin;
+}
+h3{
+  font-size: 4vmin;
+}
+.splash{
+  margin-top: 5px;
+}
+.instruction{
+  height: 200px;
+}
+.center{
+  text-align: center;
+}
+.AlignRight{
+  width: 100%;
+  text-align: right;
+}
+.card-panel{
+  margin: 0;
+}
+.MarginBottom{
+  margin-bottom: 0px;
+}
+.question{
+  height: auto;
 }

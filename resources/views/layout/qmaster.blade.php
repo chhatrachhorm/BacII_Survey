@@ -14,8 +14,14 @@
   <body>
     @include('layout.nav')
     <div class="container">
-      <div class="row">
-        @yield('survey')
+      <div class="row MarginBottom">
+        @yield('Heading')
+      </div>
+      <div class="row MarginBottom">
+        @yield('Instruction')
+      </div>
+      <div class="row MarginBottom">
+        @yield('Question')
       </div>
     </div>
     @include('layout.footer')
