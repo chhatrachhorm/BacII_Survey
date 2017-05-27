@@ -1,20 +1,47 @@
 @extends('layout.qmaster')
 @section('desc', 'Take the survey and you will know what career fits you the most!')
 @section('title', 'survey')
-@section('survey')
-<div class="row">
-      <div class="col s12 m5">
+@section('Heading')
+      <div class="col s12 splash">
         <div class="card-panel #212121 grey darken-4">
-          <span class="white-text">I am a very simple card. I am good at containing small bits of information.
-          I am convenient because I require little markup to use effectively. I am similar to what is called a panel in other frameworks.
-          </span>
+          <h1 class="white-text">
+            ការស្វែងយល់ពីជំនាញ
+          </h1>
         </div>
       </div>
-</div>
-<h1>Test</h1>
-<ol>
-@foreach( $answers[1] as $x)
-<li>{{ $x -> ans_desc }}</li>
-@endforeach
-</ol>
+@endsection
+@section('Instruction')
+<div class="col s12 instruction">
+    <div class="card-panel">
+      <h2>ចង់​សម្រេច​ចិត្ត​ប្រកប​ដោយ​ភាព ត្រឹមត្រូវឬ?</h2>
+      <h3>ចូរមានភាពស្មោះត្រង់ ចំពោះខ្លួនអ្នក</h3>
+      <div class="AlignRight">
+      <a href="#S1" class="waves-effect waves-light btn pulse #0d47a1 blue darken-3"><i class="material-icons left"></i>ចាប់ផ្តើម</a>
+    </div>
+    </div>
+  </div>
+@endsection
+@section('Question')
+<div class="col s12 question" id="S1">
+    <div class="card-panel">
+      <h2>{{$questions[1]->q_desc}}</h2>
+      <ol>
+        <table class="stripe">
+        @foreach($answers[1] as $answer)
+        <tr>
+          <td><li>. {{$answer->ans_desc}}</li></td>
+          <td>
+            @for($i=0; $i<4; $i++)
+            <label><input class="with-gap" name="" type="radio"/>{{$i}}</label>
+            @endfor
+          </td>
+        </tr>
+        @endforeach
+        </table>
+      </ol>
+      <div class="AlignRight">
+      <a class="waves-effect waves-light btn pulse #0d47a1 blue darken-3"><i class="material-icons left"></i>បន្ទាប់</a>
+    </div>
+    </div>
+  </div>
 @endsection

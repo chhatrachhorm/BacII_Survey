@@ -29,4 +29,4 @@ class PagesController extends Controller
 //     return view('skillsurvey.test1')->with('answers', $answers);
 //     // return view::make('skillsurvey.testdb')->with('answers', $answers);
 //     }
-// }
+}
