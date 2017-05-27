@@ -1,3 +1,4 @@
+<div class="navbar-fixed">
 <nav>
   <div class="nav-wrapper #0d47a1 blue darken-3 wrapcontent">
     <a href="#!" class="brand-logo">SkillPicker</a>
@@ -16,3 +17,4 @@
     </ul>
   </div>
 </nav>
+</div>
