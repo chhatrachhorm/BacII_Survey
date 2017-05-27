@@ -35,7 +35,7 @@
     @for($secNum = 0; $secNum < 16; $secNum++)
     <h2>{{$questions[$secNum][0]->q_desc}}</h2>
     <ol>
-      <table class="stripe">
+      <table class="striped">
       @foreach($answers[$secNum] as $answer)
       <tr>
         <td><li>. {{$answer->ans_desc}}</li></td>
