@@ -9,7 +9,7 @@ class SurveyComposer{
     }
     //$answers = DB::select('select * from answers where q_id = :id', ['id'=>1]);
     $view->with('answers', $answers);
-    $view->with('A', 'B');
-    $view->with('Z', 1);
+    // $view->with('A', 'B');
+    // $view->with('Z', 1);
   }
 }
