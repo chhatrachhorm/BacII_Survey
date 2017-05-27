@@ -24,6 +24,8 @@
 @section('Question')
 <div class="col s12 question" id="S1">
   <div class="card-panel">
+    @php $n = 0; Print ($n); @endphp
+    <?php $n = 1; Print ($n); ?>
     <h2>{{$questions[0][0]->q_desc}}</h2>
     <ol>
       <table class="stripe">
@@ -32,13 +34,14 @@
         <td><li>. {{$answer->ans_desc}}</li></td>
         <td>
           @for($i=0; $i<4; $i++)
-          <label><input class="with-gap" name="" type="radio"/>{{$i}}</label>
+          <label><input class="with-gap" name="ans" type="radio"/>{{$i}}</label>
           @endfor
         </td>
       </tr>
       @endforeach
       </table>
     </ol>
+
     <div class="AlignRight">
     <a class="waves-effect waves-light btn pulse #0d47a1 blue darken-3"><i class="material-icons left"></i>បន្ទាប់</a>
   </div>
