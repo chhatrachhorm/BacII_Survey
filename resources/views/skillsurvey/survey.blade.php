@@ -24,7 +24,7 @@
 
 
 @section('Question')
-<div class="col s12 question" id="S1">
+<div class="col s12 question">
   <form method="POST" action="SU"><!--skill understanding -> SU-->
   <div class="card-panel">
     <?php
@@ -35,17 +35,17 @@
 
     <ul class="collapsible popout" data-collapsible="accordion">
       @for($secNum = 0; $secNum < 16; $secNum++)
-      <li>
+      <li class="animated zoomIn">
         <div class="collapsible-header"><i class="material-icons">filter_drama</i>{{$questions[$secNum][0]->q_desc}}</div>
         <div class="collapsible-body"><span>
           <table class="striped">
           @foreach($answers[$secNum] as $answer)
           <tr>
-            <td><li>. {{$answer->ans_desc}}</li></td>
+            <td class="PaddingLeft">{{$answer->ans_desc}}</td><!-- i just delete <li></li>-->
             <?php
               $nameradio = "ans". $ansNum;
             ?>
-            <td>
+            <td class="MinWidth AlignRight">
               @for($i=0; $i<4; $i++)
               <?php $idradio = "id".$ansNum. $i; ?>
               <input class="with-gap" name="<?php echo "$nameradio" ?>" value="{{$i}}" type="radio" id="<?php echo "$idradio" ?>"  />

@@ -21,16 +21,16 @@ h3{
   font-size: 4vmin;
 }
 .splash{
-  margin-top: 5px;
+  margin-top: 2vmin;
 }
 .instruction{
   height: 200px;
+  margin-bottom: 10vmin;
 }
 .center{
   text-align: center;
 }
 .AlignRight{
-  width: 100%;
   text-align: right;
 }
 .card-panel{
@@ -41,4 +41,11 @@ h3{
 }
 .question{
   height: auto;
+  margin-bottom: 2vmin;
+}
+.MinWidth{
+  min-width: 10%;
+}
+.PaddingLeft{
+  padding-left: 3vmin;
 }

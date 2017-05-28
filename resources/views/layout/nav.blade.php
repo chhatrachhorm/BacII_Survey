@@ -9,12 +9,6 @@
       <li><a class="waves-effect" href="contact">Contacts</a></li>
       <li><a class="waves-effect" href="about"><i class="material-icons">info_outline</i></a></li>
     </ul>
-    <ul class="side-nav" id="mobile-demo">
-      <li><a href="welcome">Welcome</a></li>
-      <li><a href="survey">Skill Picker</a></li>
-      <li><a href="contact">Contact</a></li>
-      <li><a href="about">About</a></li>
-    </ul>
     <ul id="slide-out" class="side-nav">
         <li>
           <div class="userView">
@@ -26,8 +20,8 @@
           <a href="#!email"><span class="white-text email">skillpciker@google.org</span></a>
           </div>
         </li>
-        <li><a class="waves-effect" href="#!">Welcome</a></li>
-        <li><a class="waves-effect" href="#!">Skill Picking</a></li>
+        <li><a class="waves-effect" href="welcome">Welcome</a></li>
+        <li><a class="waves-effect" href="survey">Skill Picking</a></li>
         <li><div class="divider"></div></li>
         <li><a class="subheader">More</a></li>
         <li><a class="waves-effect" href="#!">Contact</a></li>
