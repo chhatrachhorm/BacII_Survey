@@ -24,8 +24,8 @@
         <li><a class="waves-effect" href="survey">Skill Picking</a></li>
         <li><div class="divider"></div></li>
         <li><a class="subheader">More</a></li>
-        <li><a class="waves-effect" href="#!">Contact</a></li>
-        <li><a class="waves-effect" href="#!">About</a></li>
+        <li><a class="waves-effect" href="contact">Contact</a></li>
+        <li><a class="waves-effect" href="about">About</a></li>
       </ul>
   </div>
 </nav>

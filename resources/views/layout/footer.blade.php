@@ -12,11 +12,11 @@
               <div class="col l4 offset-l2 s12">
                 <h5 class="white-text"> </h5>
                 <ul>
-                  <li><a class="grey-text text-lighten-3" href="tel:+85578308608">Phone number: 855 000 000 0000</a></li>
-                  <li><a class="grey-text text-lighten-3" href="tel:+85578308608">Phone number: 855 000 000 0000</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 2</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 3</a></li>
-                  <li><a class="grey-text text-lighten-3" href="#!">Link 4</a></li>
+                  <li><a class="grey-text text-lighten-3" href="tel:+85596645395">Phone number: 855 96 645 395</a></li>
+                  <li><a class="grey-text text-lighten-3" href="tel:+85515404410">Phone number: 855 15 404 410</a></li>
+                  <li><a class="grey-text text-lighten-3" href="mailto:skillpicker@gmail.com">Email: skillpicker@gmail.com</a></li>
+                  <li><a class="grey-text text-lighten-3" href="www.facebook.com/skillpicker">Follow Us on Facebook</a></li>
+                  <li><a class="grey-text text-lighten-3" href="www.instagram.com/skillpicker">Follow us on Instragram</a></li>
                 </ul>
               </div>
             </div>

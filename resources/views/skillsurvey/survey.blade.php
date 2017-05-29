@@ -24,7 +24,7 @@
 
 
 @section('Question')
-<div class="col s12 question">
+<div class="col s12 m6 question">
   <form method="POST" action="SU"><!--skill understanding -> SU-->
   <div class="card-panel">
     <?php
@@ -41,11 +41,11 @@
           <table class="striped">
           @foreach($answers[$secNum] as $answer)
           <tr>
-            <td class="PaddingLeft">{{$answer->ans_desc}}</td><!-- i just delete <li></li>-->
+            <td class="PaddingLeft">{{$answer->ans_desc}}<!--</td> i just delete <li></li>--><br>
             <?php
               $nameradio = "ans". $ansNum;
             ?>
-            <td class="MinWidth AlignRight">
+            <!-- <td class="MinWidth AlignRight"> -->
               @for($i=0; $i<4; $i++)
               <?php $idradio = "id".$ansNum. $i; ?>
               <input class="with-gap" name="<?php echo "$nameradio" ?>" value="{{$i}}" type="radio" id="<?php echo "$idradio" ?>"  />
@@ -79,5 +79,16 @@
   </div>
 
 </form>
+  </div>
+  <div class="col lg6 offset-lg6">
+    <div class="card-panel #0d47a1 blue darken-3">
+      <h1 class="white-text animated slideInUp">
+        lorem Lorem Lorem lorem
+      </h1>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum
+      </p>
+    </div>
   </div>
 @endsection

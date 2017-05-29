@@ -14,10 +14,10 @@ class PagesController extends Controller
     	return view("skillsurvey.survey");
     }
     public function contact(){
-    	return view("skillsurvey.contact");
+    	return view("contact");
     }
     public function about(){
-    	return view("skillsurvey.about");
+    	return view("about");
     }
 //     public function test(){
 //     // $answers = DB::select('select * from answers where q_id = :id', ['id'=>1]);
