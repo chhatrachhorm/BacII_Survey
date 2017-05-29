@@ -53,7 +53,7 @@
             <td class="MinWidth AlignRight">
               @for($i=0; $i<4; $i++)
               <?php $idradio = "id".$ansNum. $i; ?>
-              <input class="with-gap" name="<?php echo "$nameradio" ?>" value="{{$i}}" type="radio" id="<?php echo "$idradio" ?>"  />
+              <input class="with-gap" name="<?php echo "$nameradio" ?>" value="{{$i}}" type="radio" id="<?php echo "$idradio" ?>" />
               <label for="<?php echo "$idradio" ?>">{{$i}}</label>
               @endfor
             </td>
