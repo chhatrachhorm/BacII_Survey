@@ -16,7 +16,7 @@
       <h2 class="animated bounceInLeft">ចង់​សម្រេច​ចិត្ត​ប្រកប​ដោយ​ភាព ត្រឹមត្រូវឬ?</h2>
       <h3 class="animated bounceInUp">ចូរមានភាពស្មោះត្រង់ ចំពោះខ្លួនអ្នក</h3>
       <div class="AlignRight animated bounceInRight">
-      <a href="#S1" class="waves-effect waves-light btn pulse #0d47a1 blue darken-3 animated bounInRight"><i class="material-icons left"></i>ចាប់ផ្តើម</a>
+      <a href="#id0" class="waves-effect waves-light btn pulse #0d47a1 blue darken-3 animated bounInRight" onclick="@verbatim$('.collapsible').collapsible('open', 0);@endverbatim"><i class="material-icons left"></i>ចាប់ផ្តើម</a>
     </div>
     </div>
   </div>
@@ -25,7 +25,8 @@
 
 @section('Question')
 <div class="col s12 question">
-  <form method="POST" action="SU"><!--skill understanding -> SU-->
+  <form method="POST" action="/SU"><!--skill understanding -> SU-->
+    {!! csrf_field() !!}
   <div class="card-panel">
     <?php
       // $secNum = 0;
@@ -35,9 +36,13 @@
 
     <ul class="collapsible popout" data-collapsible="accordion">
       @for($secNum = 0; $secNum < 16; $secNum++)
+      <?php
+        $idlist = "id".$secNum;
+      ?>
       <li class="animated zoomIn">
-        <div class="collapsible-header"><i class="material-icons">filter_drama</i>{{$questions[$secNum][0]->q_desc}}</div>
+        <div class="collapsible-header" id="<?php echo "$idlist" ?>">{{$questions[$secNum][0]->q_desc}}</div>
         <div class="collapsible-body"><span>
+          <b>តើអ្នកមានជំនាញយ៉ាងណាចំពោះកិច្ចការខាងក្រោមនេះ?</b><br><br>
           <table class="striped">
           @foreach($answers[$secNum] as $answer)
           <tr>
@@ -67,7 +72,11 @@
         </table>
       </span>
       <div class="AlignRight">
-      <a class="waves-effect waves-light btn pulse #0d47a1 blue darken-3"><i class="material-icons left"></i>បន្ទាប់</a>
+        <?php
+          $num = $secNum+1;
+          $idlistnext = "survey#id".$num;
+         ?>
+      <a onclick="@verbatim$('.collapsible').collapsible('open', <?php echo "$num";?>);@endverbatim" href="<?php echo "$idlistnext";?>" class="waves-effect waves-light btn pulse #0d47a1 blue darken-3"><i class="material-icons left"></i>បន្ទាប់</a>
     </div>
         </div>
       </li>
@@ -75,7 +84,9 @@
     </ul>
 
 
-
+    <button class="btn waves-effect waves-light" type="submit" name="action">Submit
+        <i class="material-icons right">send</i>
+      </button>
   </div>
 
 </form>
